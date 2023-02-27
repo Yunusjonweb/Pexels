@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*Header section*/
+
+.header_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header_elements,
+.form_elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.header_title h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    color: #000;
+}
+
+.header_search input {
+    width: 500px;
+    height: 50px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #DBDBDB;
+
+}
+
+.header_button button {
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #05a081;
+    background-color: #05a081;
+}
+
+.header_search input::placeholder {
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+/*Header section*/
+
+/*Main section*/
+
+.cards_imges {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.newCard {
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.img_info,
+.user_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile_image {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.download-btn {
+    background-color: #fff;
+    color: #05a081;
+    width: 40px;
+    border: 1px solid #fff;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.like-btn {
+    background-color: #fff;
+    color: #05a081;
+    width: 40px;
+    border: 1px solid #fff;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.photograph_author {
+    color: #05a081;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/*Main section*/
+
+/*Success toast*/
+
+.toast {
+    position: absolute;
+    right: 25px;
+    top: 20%;
+    padding: 20px 35px 20px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #4070f4;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.hidden {
+    display: none;
+}
+
+.toast .toast-content {
+    display: flex;
+    align-items: center;
+}
+
+.toast-content .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: #4070f4;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+
+}
+
+.toast-content .message {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2px;
+}
+
+.message .text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.message .text-1 {
+    font-weight: 600;
+    color: #333;
+}
+
+/*Success toast*/
+
+/*Success danger*/
+
+.toast-danger {
+    position: absolute;
+    right: 25px;
+    top: 20%;
+    padding: 20px 35px 20px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid red;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.hidden {
+    display: none;
+}
+
+.toast-danger .danger-content {
+    display: flex;
+    align-items: center;
+}
+
+.danger-content .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+
+}
+
+.danger-content .message {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2px;
+}
+
+.message .text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.message .text-1 {
+    font-weight: 600;
+    color: #333;
+}
+
+/*Success danger*/
